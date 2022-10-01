@@ -3,6 +3,14 @@ import freeCodeCampLogo from './image/freecodecamp-logo.png';
 import { Button } from './Button';
 
 function App() {
+
+  const manejarClick = () =>{
+    console.log('Click');
+  }
+  const reiniciarContador = () => {
+    console.log('Reiniciar')
+  }
+
   return (
     <div className="App">
       <div className='freecodecamp-logo-contenedor'>
@@ -15,11 +23,11 @@ function App() {
         <Button
         txt='click'
         esBotonDeClick={true}
-        manejarClick={}/>
+        manejarClick={manejarClick}/>
         <Button
         txt='Reiniciar'
         esBotonDeClick={false}
-        manejarClick={}/>
+        manejarClick={reiniciarContador}/>
       </div>
     </div>
   );
